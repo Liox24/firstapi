@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokemon API</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0d0e0f;
+  max-width: 100%;
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  color: white;
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox input {
+  border-radius: 8px 0 0 8px;
+  border: 0;
+  outline: none;
+  height: 36px;
+  padding: 4px 16px;
+  background-color: white;
+  color: #000;
+}
+
+.searchBox button {
+  border-radius: 0 8px 8px 0;
+  border: 0;
+  height: 36px;
+  padding: 4px 16px;
+  background-color: white;
+}
+
+.pokemonBox {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.pokemonBox img {
+  width: 200px;
+}
+
+.pokemonBox p {
+  margin-top: 1rem;
+}
+
+
+
+
+.pokemonInfos {
+  padding: 2rem;
+  flex-grow: 1;
+}
+
+.pokemonBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.pokemonContainer {
+  flex: 0 0 calc(33.33% - 16px);
+  margin: 8px;
+  background-color: #1c1c1e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pokemonImage img {
+  width: 100%;
+  height: auto;
+}
+
+.pokemonInfos {
+  padding: 1rem;
+  text-align: center;
+}
+
+
+
+.pokemonBox .pokemonInfos {
+  padding: 2rem;
+}
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="searchBox">
+        <input
+          id="pokemonName"
+          type="Pokemon name"
+          placeholder="Pokemon name"
+        />
+        <button id="search">🔎</button>
+      </div>
+
+      <div class="pokemonBox"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
