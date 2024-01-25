@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>APOD</title>
+    <style>
+         .excellent-block {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            /* height: 100vh; */
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #000000;
+            /* border-radius: 10px; */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* .excellent-block h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        } */
+
+        .excellent-block p {
+            font-size: 1.2em;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="details-container">
+            <div class="title">
+                <h1>Welcome to Astronomical Picture Of the Day</h1>
+            </div>
+            <div class="details">
+                <div class="details-input">
+                    <span>Date: </span>
+                    <input type="date">
+                </div>
+                <button id="fetch-data">Fetch Data</button>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="image-container"></div>
+            <div class="text-container"></div>
+        </div>
+    </div>
+    <div class="excellent-block">
+        <!-- <h1>Excellent!</h1> -->
+        <p id="datatext">This is a fantastic block created with HTML, CSS, and JavaScript 
+        </p>
+        <!-- <button onclick="alert('Keep up the good work!')">Click Me</button> -->
+    </div>
+    <!-- <div id="datatext" style="display: block; color: red; font-size: 30px;">Hello</div> -->
+    <script src="script.js"></script>
+</body>
+</html>
